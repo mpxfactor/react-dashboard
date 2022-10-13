@@ -1,0 +1,19 @@
+.chart {
+  flex: 4;
+  transition: box-shadow 0.5s ease-in-out;
+  color: gray;
+
+  &:hover {
+    -webkit-box-shadow: 9px 10px 5px 0px rgba(209, 207, 209, 1);
+    -moz-box-shadow: 9px 10px 5px 0px rgba(209, 207, 209, 1);
+    box-shadow: 9px 10px 5px 0px rgba(209, 207, 209, 1);
+  }
+
+  .title {
+    margin-bottom: 1em;
+  }
+
+  .chartGrid {
+    stroke: rgb(218, 210, 210);
+  }
+}

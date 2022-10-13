@@ -1,0 +1,27 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+
+    img {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .status {
+    padding: 0.4em;
+    border-radius: 0.4em;
+
+    &.Approved {
+      background: rgba(0, 255, 0, 0.238);
+    }
+
+    &.Pending {
+      background: rgba(255, 217, 0, 0.205);
+    }
+  }
+}
