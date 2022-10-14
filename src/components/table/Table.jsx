@@ -8,10 +8,6 @@ import Paper from "@mui/material/Paper";
 import "./table.scss";
 
 const List = () => {
-  function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-  }
-
   const rows = [
     {
       id: 1143155,

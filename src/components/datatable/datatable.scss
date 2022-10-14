@@ -1,0 +1,58 @@
+.datatable {
+  &:hover {
+    cursor: pointer;
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+
+    .cellImg {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .classWithStatus {
+    padding: 0.3em;
+    border-radius: 0.5em;
+
+    &.active {
+      color: green;
+      background: rgba(0, 128, 0, 0.271);
+    }
+
+    &.pending {
+      color: goldenrod;
+      background: rgba(218, 165, 32, 0.332);
+    }
+
+    &.passive {
+      color: red;
+      background: rgba(255, 0, 0, 0.296);
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 2px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 255, 0.405);
+    }
+
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 2px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.693);
+    }
+  }
+}

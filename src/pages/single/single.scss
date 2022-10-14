@@ -1,0 +1,83 @@
+.single {
+  display: flex;
+  width: 100%;
+
+  .singleContainer {
+    flex: 6;
+
+    .top {
+      padding: 1.25em;
+      display: flex;
+      gap: 1.5em;
+
+      .left {
+        flex: 1;
+        position: relative;
+
+        .edit {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 2px 10px;
+          color: rgb(209, 24, 209);
+          background-color: rgba(209, 24, 209, 0.215);
+          border-radius: 0 5px 0 5px;
+        }
+
+        .title {
+          font-size: 16px;
+          color: gray;
+        }
+
+        .item {
+          display: flex;
+          gap: 1.25em;
+
+          .itemImg {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            .itemTitle {
+              margin-bottom: 0.5em;
+              color: #555;
+            }
+
+            .detailItem {
+              margin-bottom: 0.4em;
+              font-size: 0.9em;
+
+              .itemKey {
+                margin-right: 0.7em;
+                font-weight: bold;
+                color: gray;
+              }
+
+              .itemValue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 2;
+      }
+    }
+
+    .bottom {
+      padding: 20px;
+      margin: 10px 20px;
+
+      .title {
+        font-size: 16px;
+        color: gray;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
