@@ -11,13 +11,16 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import LogoutIcon from "@mui/icons-material/Logout";
 import PollIcon from "@mui/icons-material/Poll";
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">CreSo</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">CreSo</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -28,14 +31,19 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li>
-            <PeopleAltIcon className="icon" />
-            <span>Users</span>
-          </li>
-          <li>
-            <Inventory2Icon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <PeopleAltIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <Inventory2Icon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
+
           <li>
             <ViewStreamIcon className="icon" />
             <span>Orders</span>
