@@ -56,8 +56,10 @@
       border: none;
 
       .viewButton,
-      .deleteButton {
+      .deleteButton ,
+      {
         color: gray;
+        border: none;
       }
     }
   }
