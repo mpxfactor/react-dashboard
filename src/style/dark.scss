@@ -1,66 +1,65 @@
 .app.dark {
-  background: #222;
-  color: gray;
+    background: #222;
+    color: gray;
 
-  .chartGrid {
-    stroke: rgb(74, 67, 67);
-  }
-
-  .table {
-    background: black;
-
-    .tableCell {
-      color: gray;
-    }
-  }
-
-  .navbar {
-    background: #999;
-    border-color: #333;
-
-    .search {
-      border-color: gary;
-    }
-  }
-
-  .sidebar {
-    background-color: #111;
-    border-color: #333;
-
-    .top {
-      .logo {
-        color: #999;
-      }
+    .chartGrid {
+        stroke: rgb(74, 67, 67);
     }
 
-    hr {
-      border-color: #333;
+    .table {
+        background: black;
+
+        .tableCell {
+            color: gray;
+        }
     }
 
-    ul {
-      li {
-        &:hover {
-          background-color: #333;
+    .navbar {
+        background: #999;
+        border-color: #333;
+
+        .search {
+            border-color: gary;
+        }
+    }
+
+    .sidebar {
+        background-color: #111;
+        border-color: #333;
+
+        .top {
+            .logo {
+                color: #999;
+            }
         }
 
-        .icon {
-          color: gray;
+        hr {
+            border-color: #333;
         }
-      }
-    }
-  }
 
-  .datatable {
-    .dataGrid {
-      color: gray;
-      border: none;
+        ul {
+            li {
+                &:hover {
+                    background-color: #333;
+                }
 
-      .viewButton,
-      .deleteButton ,
-      {
-        color: gray;
-        border: none;
-      }
+                .icon {
+                    color: gray;
+                }
+            }
+        }
     }
-  }
+
+    .datatable {
+        .dataGrid {
+            color: gray;
+            border: none;
+
+            .viewButton,
+            .deleteButton {
+                color: gray;
+                border: none;
+            }
+        }
+    }
 }
